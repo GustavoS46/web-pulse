@@ -1,0 +1,50 @@
+.hero-gradient {
+    background: linear-gradient(45deg, #56ccf2, #bb6bd9, #eb5757, #f2994a, #f2c94c);
+    background-size: 300% 300%;
+    animation: gradient-animation 10s ease infinite;
+  }
+  
+  .hero-gradient-inverted {
+    background: linear-gradient(225deg, #56ccf2, #bb6bd9, #eb5757, #f2994a, #f2c94c);
+    background-size: 300% 300%;
+    animation: gradient-animation-inverted 10s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 100% 50%;
+    }
+    50% {
+      background-position: 0% 50%; 
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  @keyframes gradient-animation-inverted {
+    0% {
+      background-position: 100% 50%; 
+    }
+    50% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%; 
+    }
+  }
+  
+  @keyframes gradient-shift {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  .bg-animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient-shift 5s infinite linear;
+  }
+  
